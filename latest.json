@@ -1,6 +1,6 @@
 {
-  "version": "1.2.2",
-  "date": "2026-07-04",
-  "notes": "Version actual de la Suite de Diseno Estructural. Sin parches pendientes.",
-  "download_url": ""
+  "version": "1.2.3",
+  "date": "2026-07-08",
+  "notes": "Correcciones y mejoras: diagramas de interaccion de columnas (2D/3D/memoria), DXF con orden As(+)/As(-), texto 0.30 y colores por estado en trabes y columnas de acero/compuestas, refuerzo transversal (grapas) en zapatas con dimension final, varillas comerciales #3-#10, seccion compuesta (FR pre-curado NTC, Ec editable, flechas pre/post/total con limite L/240, esquema de variables), catalogo de perfiles ampliado y seccion armada de 3 placas, barras de progreso en impresiones, y correcciones de compatibilidad con PySide6 6.11.",
+  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.3.zip"
 }
