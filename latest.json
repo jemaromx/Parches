@@ -1,6 +1,6 @@
 {
-  "version": "1.2.4",
-  "date": "2026-07-12",
-  "notes": "v1.2.4 - Longitud efectiva y efectos de 2do orden. Calculo del factor K por el abaco de alineacion AISC 360-22 Ap.7 con longitudes reales de trabes encadenadas (subdivididas, en volado y en esviaje) leidas de STAAD, en columnas de acero, concreto y compuestas; marcos arriostrados/no arriostrados por direccion. Efectos de 2do orden B1-B2 (NTC 2023 DEA art.3.7, K1<=1 para Pe1) con caso gravitacional y cargas laterales indicados por el usuario y B2 manual. Columnas compuestas: boton 'Calcular K' independiente con tabla de K y revision de longitudes GA/GB. Trabes de acero: revision de carga axial (trabe/columna). Propuesta de estribos MNL-66 (diamante/grapas) en columnas y nudos. Nudo: memoria Word reorganizada con desarrollo de calculos y referencias NTC/ACI, y correcciones de extraccion STAAD y graficas. Correcciones en zapatas y secciones.",
-  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.4.zip"
+  "version": "1.2.5",
+  "date": "2026-07-15",
+  "notes": "v1.2.5 - Mejoras de impresion DXF. Trabes (concreto y acero): el tamano del texto se ajusta a la longitud de las barras y se aplica a todos los textos el menor tamano resultante, uniformes y proximos a su barra respectiva. Todos los modulos que anotan DXF (trabes, columnas de concreto/acero/compuestas): solo se modifican los textos de capas prendidas; los textos en capas apagadas o congeladas (p.ej. numeracion de nodos oculta) se ignoran, corrigiendo los valores duplicados.",
+  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.5.zip"
 }
