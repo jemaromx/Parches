@@ -1,6 +1,6 @@
 {
-  "version": "1.2.5",
-  "date": "2026-07-15",
-  "notes": "v1.2.5 - Mejoras de impresion DXF. Trabes (concreto y acero): el tamano del texto se ajusta a la longitud de las barras y se aplica a todos los textos el menor tamano resultante, uniformes y proximos a su barra respectiva. Todos los modulos que anotan DXF (trabes, columnas de concreto/acero/compuestas): solo se modifican los textos de capas prendidas; los textos en capas apagadas o congeladas (p.ej. numeracion de nodos oculta) se ignoran, corrigiendo los valores duplicados.",
-  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.5.zip"
+  "version": "1.2.6",
+  "date": "2026-07-17",
+  "notes": "v1.2.6 — Muros de mampostería (STAAD 2025): la tabla de materiales pide fyCast (fluencia del acero de castillos), fyhor (fluencia del acero horizontal) y la altura de la pieza (tabique/block); los valores fluyen al diseño y a la memoria. Nueva propuesta automática de refuerzo horizontal con varillín (1 o 2 por junta, Ø5/32\" a 5/16\", separación en múltiplos de hilada = h pieza + 1 cm, ≤ 45 cm), optimizada por peso de acero; se reporta en el resumen de diseño por nivel y muro (UI y memoria Word). Secciones/Trabe compuesta: el esquema de variables se muestra al inicio del panel de controles. Launcher: descripciones actualizadas de Muros y Zapatas.",
+  "download_url": "https://github.com/jemaromx/Parches/raw/master/SuiteEstructural_patch_1.2.6.zip"
 }
