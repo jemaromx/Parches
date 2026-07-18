@@ -1,6 +1,8 @@
 {
-  "version": "1.2.6",
-  "date": "2026-07-17",
-  "notes": "v1.2.6 — Muros de mampostería (STAAD 2025): la tabla de materiales pide fyCast (fluencia del acero de castillos), fyhor (fluencia del acero horizontal) y la altura de la pieza (tabique/block); los valores fluyen al diseño y a la memoria. Nueva propuesta automática de refuerzo horizontal con varillín (1 o 2 por junta, Ø5/32\" a 5/16\", separación en múltiplos de hilada = h pieza + 1 cm, ≤ 45 cm), optimizada por peso de acero; se reporta en el resumen de diseño por nivel y muro (UI y memoria Word). Secciones/Trabe compuesta: el esquema de variables se muestra al inicio del panel de controles. Launcher: descripciones actualizadas de Muros y Zapatas.",
-  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.6.zip"
+  "version": "1.2.7",
+  "date": "2026-07-18",
+  "notes": "v1.2.7 — Parche acumulativo (incluye v1.2.5 y v1.2.6 para quienes saltaron versiones). Impresión DXF: texto uniforme ajustado a la longitud de barras y respeto de capas apagadas (corrige valores duplicados). Muros de mampostería (2024 y 2025): fyCast, fyhor y altura de pieza en materiales; propuesta automática de refuerzo horizontal con varillín en el resumen de diseño; corrección del acero de castillo por flexión (Asc1, método optativo NTC DEM 6.4.2.2.1) que se reportaba 0.000; las combinaciones críticas de la memoria son ahora las mismas de la pantalla de resumen. Seguridad: las actualizaciones futuras se verifican con firma digital antes de instalarse.",
+  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.7.zip",
+  "sha256": "f6fb02f0ffc6477f3567d0153c21391815a6118d1640ad38e8a824b1487c386d",
+  "signature": "4Wmo6ybQquUyHIm7t2d+aBWuoGnzuIAq4T31n9fV9zyCjt08i8gWOxPL+K5G9cJEO0368wQgayZrp228ze1aAA=="
 }
