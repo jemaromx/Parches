@@ -1,8 +1,26 @@
 {
-  "version": "1.2.7",
-  "date": "2026-07-18",
-  "notes": "v1.2.7 — Parche acumulativo (incluye v1.2.5 y v1.2.6 para quienes saltaron versiones). Impresión DXF: texto uniforme ajustado a la longitud de barras y respeto de capas apagadas (corrige valores duplicados). Muros de mampostería (2024 y 2025): fyCast, fyhor y altura de pieza en materiales; propuesta automática de refuerzo horizontal con varillín en el resumen de diseño; corrección del acero de castillo por flexión (Asc1, método optativo NTC DEM 6.4.2.2.1) que se reportaba 0.000; las combinaciones críticas de la memoria son ahora las mismas de la pantalla de resumen. Seguridad: las actualizaciones futuras se verifican con firma digital antes de instalarse.",
-  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.7.zip",
-  "sha256": "f6fb02f0ffc6477f3567d0153c21391815a6118d1640ad38e8a824b1487c386d",
-  "signature": "4Wmo6ybQquUyHIm7t2d+aBWuoGnzuIAq4T31n9fV9zyCjt08i8gWOxPL+K5G9cJEO0368wQgayZrp228ze1aAA=="
+  "version": "1.2.8",
+  "date": "2026-07-20",
+  "notes": "v1.2.8 — Parche acumulativo (incluye v1.2.5–v1.2.7 para quienes saltaron versiones). NUEVO: Guardar/Abrir proyecto en todos los módulos — cada módulo tiene botones para guardar sus datos y sus resultados (incluidas las gráficas) en un archivo .sdp y reabrirlos después sin necesidad de reconectar a STAAD ni recalcular. Los cuadros de diálogo abren en C:\\ al Abrir y en la carpeta del modelo de STAAD al Guardar. Las actualizaciones ahora se instalan en cadena: si faltan versiones anteriores, se instalan todas en orden antes de la más reciente, cada una verificada con firma digital. Incluye lo de v1.2.7: impresión DXF (texto uniforme, capas apagadas), muros de mampostería (fyCast/fyhor, altura de pieza, propuesta de varillín, Asc1 por flexión) y combinaciones críticas unificadas.",
+  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.8.zip",
+  "sha256": "136c6903a09eb07d4e19e198bf905e0e03b25e943ad7fe35befbbe7983428881",
+  "signature": "A8pQgi1ASXIpuC8L/G308homYKjK2mkPst8hZ8ho3VdXRCOFSGdvN01xFXhVM4YtDt7esQx7N6yi0FJoSRYwBQ==",
+  "patches": [
+    {
+      "version": "1.2.7",
+      "date": "2026-07-18",
+      "notes": "v1.2.7 — Parche acumulativo (incluye v1.2.5 y v1.2.6 para quienes saltaron versiones). Impresión DXF: texto uniforme ajustado a la longitud de barras y respeto de capas apagadas (corrige valores duplicados). Muros de mampostería (2024 y 2025): fyCast, fyhor y altura de pieza en materiales; propuesta automática de refuerzo horizontal con varillín en el resumen de diseño; corrección del acero de castillo por flexión (Asc1, método optativo NTC DEM 6.4.2.2.1) que se reportaba 0.000; las combinaciones críticas de la memoria son ahora las mismas de la pantalla de resumen. Seguridad: las actualizaciones futuras se verifican con firma digital antes de instalarse.",
+      "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.7.zip",
+      "sha256": "f6fb02f0ffc6477f3567d0153c21391815a6118d1640ad38e8a824b1487c386d",
+      "signature": "4Wmo6ybQquUyHIm7t2d+aBWuoGnzuIAq4T31n9fV9zyCjt08i8gWOxPL+K5G9cJEO0368wQgayZrp228ze1aAA=="
+    },
+    {
+      "version": "1.2.8",
+      "date": "2026-07-20",
+      "notes": "v1.2.8 — Parche acumulativo (incluye v1.2.5–v1.2.7 para quienes saltaron versiones). NUEVO: Guardar/Abrir proyecto en todos los módulos — cada módulo tiene botones para guardar sus datos y sus resultados (incluidas las gráficas) en un archivo .sdp y reabrirlos después sin necesidad de reconectar a STAAD ni recalcular. Los cuadros de diálogo abren en C:\\ al Abrir y en la carpeta del modelo de STAAD al Guardar. Las actualizaciones ahora se instalan en cadena: si faltan versiones anteriores, se instalan todas en orden antes de la más reciente, cada una verificada con firma digital. Incluye lo de v1.2.7: impresión DXF (texto uniforme, capas apagadas), muros de mampostería (fyCast/fyhor, altura de pieza, propuesta de varillín, Asc1 por flexión) y combinaciones críticas unificadas.",
+      "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.8.zip",
+      "sha256": "136c6903a09eb07d4e19e198bf905e0e03b25e943ad7fe35befbbe7983428881",
+      "signature": "A8pQgi1ASXIpuC8L/G308homYKjK2mkPst8hZ8ho3VdXRCOFSGdvN01xFXhVM4YtDt7esQx7N6yi0FJoSRYwBQ=="
+    }
+  ]
 }
