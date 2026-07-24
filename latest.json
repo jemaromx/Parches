@@ -1,10 +1,10 @@
 {
-  "version": "1.2.8",
-  "date": "2026-07-20",
-  "notes": "v1.2.8 — Parche acumulativo (incluye v1.2.5–v1.2.7 para quienes saltaron versiones). NUEVO: Guardar/Abrir proyecto en todos los módulos — cada módulo tiene botones para guardar sus datos y sus resultados (incluidas las gráficas) en un archivo .sdp y reabrirlos después sin necesidad de reconectar a STAAD ni recalcular. Los cuadros de diálogo abren en C:\\ al Abrir y en la carpeta del modelo de STAAD al Guardar. Las actualizaciones ahora se instalan en cadena: si faltan versiones anteriores, se instalan todas en orden antes de la más reciente, cada una verificada con firma digital. Incluye lo de v1.2.7: impresión DXF (texto uniforme, capas apagadas), muros de mampostería (fyCast/fyhor, altura de pieza, propuesta de varillín, Asc1 por flexión) y combinaciones críticas unificadas.",
-  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.8.zip",
-  "sha256": "136c6903a09eb07d4e19e198bf905e0e03b25e943ad7fe35befbbe7983428881",
-  "signature": "A8pQgi1ASXIpuC8L/G308homYKjK2mkPst8hZ8ho3VdXRCOFSGdvN01xFXhVM4YtDt7esQx7N6yi0FJoSRYwBQ==",
+  "version": "1.2.9",
+  "date": "2026-07-23",
+  "notes": "v1.2.9 — Parche acumulativo (incluye v1.2.5–v1.2.8). NUEVO: rediseño visual de toda la suite — apariencia profesional y sobria (azul técnico y acento ámbar sobre tonos neutros), pestañas, tablas, botones y campos más limpios, y gráficas con estilo unificado (fondo claro, rejilla discreta, curvas nominal/factorada bien diferenciadas). Se corrigió que en algunos módulos ciertos controles o el botón de ejecutar se vieran cortados: ahora el panel de captura muestra todos sus campos y el botón principal queda fijo y completo al pie. Incluye lo de v1.2.8: Guardar/Abrir proyecto con resultados y gráficas, diálogos que abren en C:\\/carpeta del modelo, e instalación de actualizaciones en cadena verificada con firma digital.",
+  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.9.zip",
+  "sha256": "770bfede919ec901a5844bb9a5538ba3216ab485c7f8ac4d83ea09b5cb0f4bfc",
+  "signature": "wcefdedA0Yq/KXwjnR/TteMIkMJkNpnpP+XJtt1g9ZmLBnCHjddtmfwmEOvXIi9LSWGqauD6jt/HU0TjfTpiBA==",
   "patches": [
     {
       "version": "1.2.7",
@@ -21,6 +21,14 @@
       "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.8.zip",
       "sha256": "136c6903a09eb07d4e19e198bf905e0e03b25e943ad7fe35befbbe7983428881",
       "signature": "A8pQgi1ASXIpuC8L/G308homYKjK2mkPst8hZ8ho3VdXRCOFSGdvN01xFXhVM4YtDt7esQx7N6yi0FJoSRYwBQ=="
+    },
+    {
+      "version": "1.2.9",
+      "date": "2026-07-23",
+      "notes": "v1.2.9 — Parche acumulativo (incluye v1.2.5–v1.2.8). NUEVO: rediseño visual de toda la suite — apariencia profesional y sobria (azul técnico y acento ámbar sobre tonos neutros), pestañas, tablas, botones y campos más limpios, y gráficas con estilo unificado (fondo claro, rejilla discreta, curvas nominal/factorada bien diferenciadas). Se corrigió que en algunos módulos ciertos controles o el botón de ejecutar se vieran cortados: ahora el panel de captura muestra todos sus campos y el botón principal queda fijo y completo al pie. Incluye lo de v1.2.8: Guardar/Abrir proyecto con resultados y gráficas, diálogos que abren en C:\\/carpeta del modelo, e instalación de actualizaciones en cadena verificada con firma digital.",
+      "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.9.zip",
+      "sha256": "770bfede919ec901a5844bb9a5538ba3216ab485c7f8ac4d83ea09b5cb0f4bfc",
+      "signature": "wcefdedA0Yq/KXwjnR/TteMIkMJkNpnpP+XJtt1g9ZmLBnCHjddtmfwmEOvXIi9LSWGqauD6jt/HU0TjfTpiBA=="
     }
   ]
 }
