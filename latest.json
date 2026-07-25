@@ -1,10 +1,10 @@
 {
-  "version": "1.2.9",
-  "date": "2026-07-23",
-  "notes": "v1.2.9 — Parche acumulativo (incluye v1.2.5–v1.2.8). NUEVO: rediseño visual de toda la suite — apariencia profesional y sobria (azul técnico y acento ámbar sobre tonos neutros), pestañas, tablas, botones y campos más limpios, y gráficas con estilo unificado (fondo claro, rejilla discreta, curvas nominal/factorada bien diferenciadas). Se corrigió que en algunos módulos ciertos controles o el botón de ejecutar se vieran cortados: ahora el panel de captura muestra todos sus campos y el botón principal queda fijo y completo al pie. Incluye lo de v1.2.8: Guardar/Abrir proyecto con resultados y gráficas, diálogos que abren en C:\\/carpeta del modelo, e instalación de actualizaciones en cadena verificada con firma digital.",
-  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.9.zip",
-  "sha256": "770bfede919ec901a5844bb9a5538ba3216ab485c7f8ac4d83ea09b5cb0f4bfc",
-  "signature": "wcefdedA0Yq/KXwjnR/TteMIkMJkNpnpP+XJtt1g9ZmLBnCHjddtmfwmEOvXIi9LSWGqauD6jt/HU0TjfTpiBA==",
+  "version": "1.2.10",
+  "date": "2026-07-25",
+  "notes": "v1.2.10 — Parche acumulativo (incluye v1.2.5–v1.2.9). NUEVO: efectos de segundo orden por dirección en columnas.\n• column_design_pro (concreto): selector de Cm con 3 opciones (0.6−0.4·M1/M2 automático, 1.0 conservador o manual), calculado en las dos direcciones; β_dns ahora se obtiene automáticamente del caso de carga sostenida (PP+CM+CVma) y se acota a 0.60–1.00; el índice de estabilidad λest se indica por dirección (Dir. X y Dir. Z) para el factor Fas.\n• columnsteel_design_pro (acero): el factor B2 se indica por dirección (Dir. X y Dir. Z); Cm se calcula en ambas direcciones; se retiró la opción 'Calcular por entrepisos' y el campo 'N° casos laterales' (sin uso).\n• compositecolumn_design_pro (compuestas): B2 por dirección y sección de segundo orden (B1-B2) documentada en la memoria; se retiró 'N° casos laterales'.\nTodo con NTC DEC 2023 y ACI 318-25 / AISC 360-22, reflejado en la memoria de cálculo con fórmulas, referencias y operaciones. Incluye lo de v1.2.9 (rediseño visual y corrección de recortes) y v1.2.8 (Guardar/Abrir proyecto, actualización en cadena con firma digital).",
+  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.10.zip",
+  "sha256": "1b096db44722b6a31fd8401444a02a858324a344c38b1fecea6bfba4cacfd1c7",
+  "signature": "QsbylvsUjxC1hO8/IzifUL6rm5pxuh6Y/Clbt+nGqcFjvOXj8inpiLapFjXokKRNIibc+V0I/GoLSOEZr0QfBA==",
   "patches": [
     {
       "version": "1.2.7",
@@ -29,6 +29,14 @@
       "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.9.zip",
       "sha256": "770bfede919ec901a5844bb9a5538ba3216ab485c7f8ac4d83ea09b5cb0f4bfc",
       "signature": "wcefdedA0Yq/KXwjnR/TteMIkMJkNpnpP+XJtt1g9ZmLBnCHjddtmfwmEOvXIi9LSWGqauD6jt/HU0TjfTpiBA=="
+    },
+    {
+      "version": "1.2.10",
+      "date": "2026-07-25",
+      "notes": "v1.2.10 — Parche acumulativo (incluye v1.2.5–v1.2.9). NUEVO: efectos de segundo orden por dirección en columnas.\n• column_design_pro (concreto): selector de Cm con 3 opciones (0.6−0.4·M1/M2 automático, 1.0 conservador o manual), calculado en las dos direcciones; β_dns ahora se obtiene automáticamente del caso de carga sostenida (PP+CM+CVma) y se acota a 0.60–1.00; el índice de estabilidad λest se indica por dirección (Dir. X y Dir. Z) para el factor Fas.\n• columnsteel_design_pro (acero): el factor B2 se indica por dirección (Dir. X y Dir. Z); Cm se calcula en ambas direcciones; se retiró la opción 'Calcular por entrepisos' y el campo 'N° casos laterales' (sin uso).\n• compositecolumn_design_pro (compuestas): B2 por dirección y sección de segundo orden (B1-B2) documentada en la memoria; se retiró 'N° casos laterales'.\nTodo con NTC DEC 2023 y ACI 318-25 / AISC 360-22, reflejado en la memoria de cálculo con fórmulas, referencias y operaciones. Incluye lo de v1.2.9 (rediseño visual y corrección de recortes) y v1.2.8 (Guardar/Abrir proyecto, actualización en cadena con firma digital).",
+      "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.10.zip",
+      "sha256": "1b096db44722b6a31fd8401444a02a858324a344c38b1fecea6bfba4cacfd1c7",
+      "signature": "QsbylvsUjxC1hO8/IzifUL6rm5pxuh6Y/Clbt+nGqcFjvOXj8inpiLapFjXokKRNIibc+V0I/GoLSOEZr0QfBA=="
     }
   ]
 }
