@@ -1,10 +1,10 @@
 {
-  "version": "1.2.10",
-  "date": "2026-07-25",
-  "notes": "v1.2.10 — Parche acumulativo (incluye v1.2.5–v1.2.9). NUEVO: efectos de segundo orden por dirección en columnas.\n• column_design_pro (concreto): selector de Cm con 3 opciones (0.6−0.4·M1/M2 automático, 1.0 conservador o manual), calculado en las dos direcciones; β_dns ahora se obtiene automáticamente del caso de carga sostenida (PP+CM+CVma) y se acota a 0.60–1.00; el índice de estabilidad λest se indica por dirección (Dir. X y Dir. Z) para el factor Fas.\n• columnsteel_design_pro (acero): el factor B2 se indica por dirección (Dir. X y Dir. Z); Cm se calcula en ambas direcciones; se retiró la opción 'Calcular por entrepisos' y el campo 'N° casos laterales' (sin uso).\n• compositecolumn_design_pro (compuestas): B2 por dirección y sección de segundo orden (B1-B2) documentada en la memoria; se retiró 'N° casos laterales'.\nTodo con NTC DEC 2023 y ACI 318-25 / AISC 360-22, reflejado en la memoria de cálculo con fórmulas, referencias y operaciones. Incluye lo de v1.2.9 (rediseño visual y corrección de recortes) y v1.2.8 (Guardar/Abrir proyecto, actualización en cadena con firma digital).",
-  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.10.zip",
-  "sha256": "1b096db44722b6a31fd8401444a02a858324a344c38b1fecea6bfba4cacfd1c7",
-  "signature": "QsbylvsUjxC1hO8/IzifUL6rm5pxuh6Y/Clbt+nGqcFjvOXj8inpiLapFjXokKRNIibc+V0I/GoLSOEZr0QfBA==",
+  "version": "1.2.11",
+  "date": "2026-07-28",
+  "notes": "v1.2.11 — Parche acumulativo (incluye v1.2.5–v1.2.10). NUEVO:\n• Corrección del signo del momento en el nodo FINAL de las barras: STAAD entrega ahí la 'acción de extremo' con signo opuesto al momento interno, por lo que un momento positivo aparecía como negativo (y viceversa). Se corrige en trabes (concreto y acero) —donde afectaba la clasificación Mu+/Mu−— y en columnas (concreto, acero y compuestas), unificando el signo entre extremos; en columnas la revisión de interacción usa |M|, así que el resultado no cambia, solo el signo mostrado y el M1/M2 del factor Cm.\n• Barra de menús en todos los módulos: menú 'Archivo' (Nuevo, Abrir proyecto…, Guardar proyecto…, Salir) —'Nuevo' limpia pantalla y memoria— y menú 'Ayuda' (Acerca de… y Normativa aplicada por módulo, con las versiones de STAAD Pro 2024/2025 y OpenSTAAD).\nSe retiró el 'N° casos laterales' de compositecolumn. — Incluye todo lo de v1.2.10 (efectos de 2º orden por dirección: Cm en ambas direcciones, β_dns automático, λest/Fas y B2 por dirección).",
+  "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.11.zip",
+  "sha256": "b80d81a64614bb27f0ade8ad21a11317068f2e9e0ffcf9799dba86077b002345",
+  "signature": "OkW+TCqvN0hDxDVOQFotu1MOCo6QACdhw6lL3Vze3FlmREasB9jLjv7fZeerZe9i2yFHCfdtjl4vnMMshdKYAw==",
   "patches": [
     {
       "version": "1.2.7",
@@ -37,6 +37,14 @@
       "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.10.zip",
       "sha256": "1b096db44722b6a31fd8401444a02a858324a344c38b1fecea6bfba4cacfd1c7",
       "signature": "QsbylvsUjxC1hO8/IzifUL6rm5pxuh6Y/Clbt+nGqcFjvOXj8inpiLapFjXokKRNIibc+V0I/GoLSOEZr0QfBA=="
+    },
+    {
+      "version": "1.2.11",
+      "date": "2026-07-28",
+      "notes": "v1.2.11 — Parche acumulativo (incluye v1.2.5–v1.2.10). NUEVO:\n• Corrección del signo del momento en el nodo FINAL de las barras: STAAD entrega ahí la 'acción de extremo' con signo opuesto al momento interno, por lo que un momento positivo aparecía como negativo (y viceversa). Se corrige en trabes (concreto y acero) —donde afectaba la clasificación Mu+/Mu−— y en columnas (concreto, acero y compuestas), unificando el signo entre extremos; en columnas la revisión de interacción usa |M|, así que el resultado no cambia, solo el signo mostrado y el M1/M2 del factor Cm.\n• Barra de menús en todos los módulos: menú 'Archivo' (Nuevo, Abrir proyecto…, Guardar proyecto…, Salir) —'Nuevo' limpia pantalla y memoria— y menú 'Ayuda' (Acerca de… y Normativa aplicada por módulo, con las versiones de STAAD Pro 2024/2025 y OpenSTAAD).\nSe retiró el 'N° casos laterales' de compositecolumn. — Incluye todo lo de v1.2.10 (efectos de 2º orden por dirección: Cm en ambas direcciones, β_dns automático, λest/Fas y B2 por dirección).",
+      "download_url": "https://raw.githubusercontent.com/jemaromx/Parches/main/SuiteEstructural_patch_1.2.11.zip",
+      "sha256": "b80d81a64614bb27f0ade8ad21a11317068f2e9e0ffcf9799dba86077b002345",
+      "signature": "OkW+TCqvN0hDxDVOQFotu1MOCo6QACdhw6lL3Vze3FlmREasB9jLjv7fZeerZe9i2yFHCfdtjl4vnMMshdKYAw=="
     }
   ]
 }
